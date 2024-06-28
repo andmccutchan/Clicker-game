@@ -5,6 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pen Clicker</title>
 	<link rel="stylesheet" href="/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/82377678a2.js" crossorigin="anonymous"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 	<div class="achievements">
@@ -13,7 +21,7 @@
 	<div class="controls">
 		<div class="container pens">
 			<h1>Pens: <strong><span id="penTotal">0</span></strong></h1>
-			<p>Unsold Inventory: <strong><span id="inventoryTotal">0</span></strong></p>
+			<p>Unsold inventory: <strong><span id="inventoryTotal">0</span></strong></p>
 			<p>Money: <strong>$<span id="moneyTotal">0</span></strong></p>
 			<button id="addPen">Make Pen</button>
 		</div>
@@ -27,13 +35,37 @@
 		</div>
 		<hr>
 		<div class="container business">
-			<h2>Market</h2>
+			<h2>Marketing</h2>
+			<p>Level: <strong><span id="marketingLevel">1</span></strong></p>
+			<div class="levelUpgrade">
+				<p>Upgrade:</p>
+				<button id="marketUpgrade">$100</button>
+			</div>
 			<p>Price of pen: <strong>$<span id="priceTotal">1.50</span></strong></p>
-			<button id="raisePrice">Raise</button><button id="lowerPrice">Lower</button>
+			<div class="wrapper">
+				<div class="raise-contents">
+					<p class="tenCents">$0.10: </p> 
+					<button	button id="raisePriceTen">Raise</button>
+					<button id="lowerPriceTen">Lower</button>
+				</div>
+				<div class="raise-contents">
+					<p class="tenCents">$0.01: </p> 
+					<button	button id="raisePriceOne">Raise</button>
+					<button id="lowerPriceOne">Lower</button>
+				</div>
+			</div>
 			<p>Demand: <strong><span id="demand">0</span>%</strong></p>
 		</div>
+		<hr>
+		<div class="container harvesting">
+			<h2>Automation</h2>
+			<p>Ink harvesters: <strong><span id="inkHarvesters">0</span></strong></p>
+			<button class="priceButton" id="inkPrice">$100</button>
+			<p>Metal drill level: <strong><span id="matalDrillLevel">0</span></strong></p>
+			<p>Metal drills: <strong><span id="matalDrills">0</span></strong></p>
+			<button class="priceButton" id="metalPrice">$200</button>
+		</div>
 	</div>
-		
 
   	<script src="/script.js"></script>
 </body>

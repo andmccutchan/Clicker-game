@@ -5,6 +5,7 @@
 }
 
 body {
+	font-family: "Lato", sans-serif;
 	margin: 8px;
 	background-color: #343434;
 	opacity: 0.8;
@@ -17,36 +18,90 @@ body {
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
+	margin: 8px 0;
 	border: 2px solid black;
-	width: 20%;
+	min-width: 320px;
+	max-width: 30%;
 	background-color: #343434;
-	color: #fff;
+	color: #ccc;
 }
 
 .container {
-	width: 100%;
-	padding: 8px;
+	padding: 10px;
 }
 
 	.container button {
-		margin: 10px 0;
+		margin-bottom: 5px;
+		margin-top: 2px;
+		padding: 5px;
+		border: 2px solid black;
+		border-radius: 8px;
+		background-color: #fff;
+	}
+
+	.container button:hover {
+		cursor: pointer;
+		background-color: #999999;
 	}
 
 	hr {
 		border: 1px solid black;
 	}
 
-	@media (max-width:320px) {
+	@media screen and (max-width:320px) {
+		.controls {
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
+			width: 80%;
+		}
 		.container {
 			width: 100%;
 		}
 	}
 
-	@media (max-width:480px) {
+	@media screen and (max-width:480px) {
 		.container {
 			width: 100%;
 		}
+
+		.controls {
+			display: flex;
+			justify-content: center;
+			margin: 0 auto;
+			width: 80%;
+		}
 	}
+
+
+	.wrapper {
+		padding-left: 10px;
+	}
+		.raise-contents {
+			display: flex;
+			align-items: center;
+		}
+			.raise-contents p {
+				margin-right: 5px;
+			}
+
+			.raise-contents button {
+				padding: 2px 5px;
+				margin: 2px 0;
+			}
+
+	.levelUpgrade {
+		display: flex;
+		align-items: center;
+	}
+		.levelUpgrade p {
+			margin-right: 5px;
+		}
+
+		.levelUpgrade button {
+			padding: 2px 5px;
+			margin: 2px 0;
+		}
 
 
 .achievements {
