@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pen Clicker</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	<div class="achievements">
+		<p id="text">Welcome to Pen Clicker! Make more pens to build your pen monopoly. Begin by cliking below.</p>
+	</div>
+	<div class="controls">
+		<div class="container pens">
+			<h1>Pens: <strong><span id="penTotal">0</span></strong></h1>
+			<p>Unsold Inventory: <strong><span id="inventoryTotal">0</span></strong></p>
+			<p>Money: <strong>$<span id="moneyTotal">0</span></strong></p>
+			<button id="addPen">Make Pen</button>
+		</div>
+		<hr>
+		<div class="container resources">
+			<h2>Resources</h2>
+			<p>Ink: <strong><span id="inkTotal">0</span></strong></p>
+			<button id="addInk">Make ink</button>
+			<p>Metal: <strong><span id="metalTotal">0</span></strong></p>
+			<button id="addMetal">Harvest Metal</button>
+		</div>
+		<hr>
+		<div class="container business">
+			<h2>Market</h2>
+			<p>Price of pen: <strong>$<span id="priceTotal">1.50</span></strong></p>
+			<button id="raisePrice">Raise</button><button id="lowerPrice">Lower</button>
+			<p>Demand: <strong><span id="demand">0</span>%</strong></p>
+		</div>
+	</div>
+		
+
+  	<script src="/script.js"></script>
+</body>
+</html>

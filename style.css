@@ -1,0 +1,62 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 8px;
+}
+
+.controls {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	border: 2px solid black;
+	width: 20%;
+}
+
+.container {
+	width: 100%;
+	padding: 0 8px;
+}
+
+	.container button {
+		margin: 10px 0;
+	}
+
+	hr {
+		border: 1px solid black;
+	}
+
+	@media (max-width:320px) {
+		.container {
+			width: 100%;
+		}
+	}
+
+	@media (max-width:480px) {
+		.container {
+			width: 100%;
+		}
+	}
+
+
+.achievements {
+ 	background-color: black;
+  	padding: 20px;
+}
+
+#text {
+	color: #fff;
+}
+
+#rasiePrice {
+	margin-right: 2px;
+}
+
+#lowerPrice {
+	margin-left: 2px;
+}
+
+
