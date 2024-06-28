@@ -6,6 +6,11 @@
 
 body {
 	margin: 8px;
+	background-color: #343434;
+	opacity: 0.8;
+	background-image:  linear-gradient(#383b62 2px, transparent 2px), linear-gradient(90deg, #383b62 2px, transparent 2px), linear-gradient(#383b62 1px, transparent 1px), linear-gradient(90deg, #383b62 1px, #343434 1px);
+	background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+	background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
 
 .controls {
@@ -14,11 +19,13 @@ body {
 	flex-direction: column;
 	border: 2px solid black;
 	width: 20%;
+	background-color: #343434;
+	color: #fff;
 }
 
 .container {
 	width: 100%;
-	padding: 0 8px;
+	padding: 8px;
 }
 
 	.container button {
