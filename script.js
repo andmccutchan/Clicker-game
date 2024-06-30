@@ -1,5 +1,5 @@
 let pens = 0;
-let money = 0;
+let money = 500;
 let ink = 0;
 let metal = 0;
 let metalClicks = 0;
@@ -14,6 +14,8 @@ let marketingLevel = 1;
 let upgradePrice = 100;
 let metalInterval;
 let inkInterval;
+let metalDrillLevel = 0;
+let drillUpgradePrice = 500;
 const baseSaleInterval = 1000;
 const maxDemand = 100;
 const decayRate = 0.25;
@@ -42,6 +44,9 @@ const metalHarvestText = document.querySelector('#matalDrills');
 const inkHarvestText = document.querySelector('#inkHarvesters');
 const metalHarvestButton = document.querySelector('#metalPrice');
 const inkHarvestButton = document.querySelector('#inkPrice');
+const metalUpgradeButton = document.querySelector('#metalUpgrade');
+const inkUpgradeButton = document.querySelector('#inkUpgrade');
+const drillLevel = document.querySelector('#metalDrillLevel');
 
 upgradeButton.onclick = upgradeMarket;
 
@@ -225,7 +230,13 @@ function adjustInkHarvestInterval() {
 	}, 1000); // Adjust this interval as needed for balance
 }
 
-
+metalUpgradeButton.addEventListener('click', () => {
+	if (money >= metalDrillPrice) {
+		metalDrillLevel++; 
+		drillLevel.innerText = metalDrillLevel;
+		metalDrillPrice *= 2;
+	} 
+});
 
 
 
