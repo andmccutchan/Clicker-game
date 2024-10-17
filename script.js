@@ -1,5 +1,5 @@
 let pens = 0;
-let money = 500;
+let money = 99999;
 let ink = 0;
 let metal = 0;
 let metalClicks = 0;
@@ -233,7 +233,7 @@ function adjustInkHarvestInterval() {
 metalUpgradeButton.addEventListener('click', () => {
 	if (money >= metalDrillPrice) {
 		metalDrillLevel++; 
-		drillLevel.innerText = metalDrillLevel;
+		metalDrillLevel.innerText = metalDrillLevel;
 		metalDrillPrice *= 2;
 	} 
 });
